@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Classes */
+@layer components {
+  .btn {
+    @apply py-2 px-4 rounded font-semibold transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-secondary;
+  }
+  
+  .container {
+    @apply mx-auto px-4;
+  }
+  
+  .section {
+    @apply py-12;
+  }
+} 

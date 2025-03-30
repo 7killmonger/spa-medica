@@ -1,0 +1,22 @@
+{
+  "name": "spa-medica",
+  "version": "1.0.0",
+  "description": "Spa Medica WordPress Theme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/tailwind.css --watch",
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./dist/css/tailwind.css --minify"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "tailwind"
+  ],
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  }
+} 

@@ -1,0 +1,109 @@
+/*
+Theme Name: Spa Medica
+Theme URI: 
+Author: 
+Author URI: 
+Description: A custom theme for Spa Medica website
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: spa-medica
+Tags: spa, medical, health, beauty, custom
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Custom Swiper Styles */
+.icons-swiper {
+    padding: 15px 10px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    height: auto;
+    width: 100% !important; /* Force single slide width on mobile */
+}
+
+/* Make slider container full width on large screens */
+@media (min-width: 640px) {
+    .icons-swiper {
+        padding: 30px 50px;
+        overflow: hidden;
+    }
+    
+    .swiper-slide {
+        width: auto !important; /* Reset width for larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .icons-swiper {
+        margin: 0 -10px;
+        width: calc(100% + 20px);
+        overflow: hidden;
+    }
+    
+    .swiper-slide {
+        width: calc(25% - 30px) !important;
+    }
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #7DAB4E;
+    width: 44px;
+    height: 44px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    top: 50%;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background-color: #EAFDD7;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #7DAB4E;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: none;
+    }
+}
+
+
+
